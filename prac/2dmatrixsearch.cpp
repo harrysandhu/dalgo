@@ -4,25 +4,6 @@
 using namespace std;
 
 
-
-bool binsearch(vector<int> &m, int target, int lo, int hi){
-
-    int mid = (lo + hi) +1/ 2;
-    int t = m[mid];
-    cout << "target" << target << "sf" << t;
-    if(target - t == 0){
-        return true;    
-    }
-    else if(lo >= hi) return false;
-    else if(target < t){
-        binsearch(m, target, lo, mid-1);
-    }else if(target > t){
-        binsearch(m, target, mid+1, hi);
-    }
-    
-   
-}
-
 bool compfunc(int i, int j) {return (i < j);}
 
 bool searchMatrix(vector< vector<int> >& matrix, int target) {
