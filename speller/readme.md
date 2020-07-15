@@ -1,1 +1,1 @@
-# Spell checker
+# Spell checker using a trie
